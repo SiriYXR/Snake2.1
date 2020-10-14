@@ -1,14 +1,14 @@
 #ifndef HEAD_H
 #define HEAD_H
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
-#include<time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
 
 
-#include<ege.h>
-#include <graphics.h>
+#include "./EGE20.08/include/ege.h"
+#include "./EGE20.08/include/graphics.h"
 
 #include <mmsystem.h>
 #pragma comment(lib,"winmm.lib")
