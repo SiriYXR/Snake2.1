@@ -5,12 +5,14 @@ Music::Music()
 {
 	voice = true;
 
+	//读取音频资源
 	mciSendString(TEXT("open 资源\\音乐\\SWITCH.WAV alias SWITCH"), NULL, 0, NULL);
 	mciSendString(TEXT("open 资源\\音乐\\EAT.WAV alias EAT"), NULL, 0, NULL);
 	mciSendString(TEXT("open 资源\\音乐\\OUTMAP.WAV alias OUTMAP"), NULL, 0, NULL);
 }
 Music::~Music()
 {
+	//关闭音频资源
 	mciSendString(TEXT("close SWITCH"), NULL, 0, NULL);
 	mciSendString(TEXT("close EAT"), NULL, 0, NULL);
 	mciSendString(TEXT("close OUTMAP"), NULL, 0, NULL);
@@ -30,9 +32,9 @@ void Music::mu_Eat()
 {
 	if (IsSound())
 	{
-		mciSendString(TEXT("close EAT"), NULL, 0, NULL);
-		mciSendString(TEXT("open 资源\\音乐\\EAT.WAV alias EAT"), NULL, 0, NULL);
-		mciSendString(TEXT("play EAT"), NULL, 0, NULL);
+		mciSendString(TEXT("close EAT"), NULL, 0, NULL);//关闭音频资源
+		mciSendString(TEXT("open 资源\\音乐\\EAT.WAV alias EAT"), NULL, 0, NULL);//读取音频资源（使文件指针回到开头）
+		mciSendString(TEXT("play EAT"), NULL, 0, NULL);//播放音频资源
 	}
 }
 

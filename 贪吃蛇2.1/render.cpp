@@ -34,6 +34,7 @@ void rend_MainFace_one(const int scores, const int highest_scores, const Status 
 	outtextxy(615, 205, str2);
 }
 
+//绘制双人场景界面
 void rend_MainFace_two(const int scores[], const Status status, Picture& picture)
 {
 	setfillcolor(EGERGB(0xfb, 0xf8, 0xf1));
@@ -65,12 +66,14 @@ void rend_MainFace_two(const int scores[], const Status status, Picture& picture
 	outtextxy(580, 205, str2);
 }
 
+//开始游戏界面
 void rend_Nogame(Picture& picture)
 {
 	picture.PUTimage_intogame(0, 0);
 	picture.PUTimage_switch_startgame(250, 410);
 }
 
+//选择界面
 void rend_Choice(Picture& picture, bool i)
 {
 	picture.PUTimage_intogame(0, 0);

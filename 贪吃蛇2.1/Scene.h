@@ -14,24 +14,24 @@ public:
 
 	~Scene();
 
-	int update();
+	int update();//逻辑更新
 
-	void render(Picture& picture);
+	void render(Picture& picture);//渲染图像
 
-	void onkey(int key);
+	void onkey(int key);//键盘事件判定
 
-	void onmouse(mouse_msg msg);
+	void onmouse(mouse_msg msg);//鼠标事件判定
 
-	void init(int i);
+	void init(int i);//初始化数值
 
-	void getStatus();
+	void getStatus();//获取场景状态
 
-	int getEndscene();
+	int getEndscene();//获取结束场景
 
 private:
 	Snake* m_pobj;
 	int m_cntObj;
-	int m_endscene;
+	int m_endscene;//是否退出游戏
 
 public:
 	Status m_status;

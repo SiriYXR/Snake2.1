@@ -10,7 +10,7 @@
 #include "./EGE20.08/include/ege.h"
 #include "./EGE20.08/include/graphics.h"
 
-#include <mmsystem.h>
+#include <mmsystem.h> //是多媒体管理模块，用于支持16位多媒体应用程序。
 #pragma comment(lib,"winmm.lib")
 
 

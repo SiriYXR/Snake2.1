@@ -3,6 +3,7 @@
 
 Picture::Picture()
 {
+	//初始化，读取图片
 	getimage(image_outgame, "资源\\图片\\界面显示\\outgame.jpg", 0, 0);
 
 	getimage(image_start, "资源\\图片\\按钮\\start.jpg", 0, 0);
@@ -51,6 +52,7 @@ Picture::Picture()
 
 Picture::~Picture()
 {
+	//释放图片对象
 	delimage(image_outgame);
 
 	delimage(image_start);

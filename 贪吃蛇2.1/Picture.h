@@ -9,6 +9,7 @@ public:
 	Picture();
 	~Picture();
 
+	//绘制图像
 	void PUTimage_outgame(int x = 0, int y = 0);
 
 	void PUTimage_start(int x = 0, int y = 0);
@@ -55,6 +56,7 @@ public:
 	void PUTimage_preasent_scoresP2(int x = 0, int y = 0);
 
 private:
+	//生成空图片对象
 	PIMAGE image_outgame = newimage();
 
 	PIMAGE image_start = newimage();

@@ -13,17 +13,17 @@ void mainloop()
 		Sleep(1);
 		/*if (scene.m_status == ismove)
 			Sleep(scene.update_speed());*/
-		fflush(stdin);
+		fflush(stdin);//清空输入
 
 
-		//读取键盘信
+		//读取键盘信息
 		if (ege::kbhit())
 		{
 			key = ege::getch();
 			scene.onkey(key); //所有键盘按键消息发送给scene	
 		}
 
-		//读取数表信息
+		//读取鼠标信息
 		if (mousemsg())
 		{
 			mouse_msg msg = getmouse();//鼠标结构体对象，在EGE头文件中声明
