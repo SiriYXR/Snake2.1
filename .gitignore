@@ -240,3 +240,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+# EGE
+贪吃蛇2.1/EGE20.08/man/
