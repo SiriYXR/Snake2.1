@@ -75,7 +75,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>E:\Snake2.1\贪吃蛇2.1\EGE20.08\lib\vs2019\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)EGE20.08\lib\vs2019\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
